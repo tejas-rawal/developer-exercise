@@ -49,11 +49,11 @@ You will need to implement the following functionality:
  * As a User I can blackjack (win immediately) when I am getting cards
  * As a Dealer I can draw cards after the player until I win or lose
 
- Bonus:
+Bonus:
 
  * Simulate a random round of the game (you don't have to write educated user decision logic - it could be guesses)
 
- Rules:
+Rules:
 
  * Bust - all possible hand values are greater than 21 points
  * Blackjack - any possible hand value is exactly 21 point
