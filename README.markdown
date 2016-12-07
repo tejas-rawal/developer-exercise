@@ -33,7 +33,7 @@ Please, write a module that provides `where` behavior to the array of hashes (se
 
 ### YouTube client
 
-Please, write a ruby api that for now takes a search string and returns 3 relevant search results from YouTube (links to YouTube videos).  Please do not use any Google API wrapper gems to accopmlish this.
+Please write a simple API client that takes a search string and returns 3 search results from the public YouTube API.  Please **do not** use any existing Google API wrapper gems to accomplish this.
 
 ### Simplified Blackjack
 
