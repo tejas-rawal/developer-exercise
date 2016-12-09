@@ -7,7 +7,7 @@ If you have any questions, feel free to email developers@benchprep.com
 
 ### Simple Backbone.js List
 
-In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs.org/) view to list the given quotes. Please do not any libraries or plugins to do this other than [jQuery](https://jquery.com/), [Backbone.js](http://backbonejs.org/), and [underscore.js](http://underscorejs.org/).
+In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs.org/) view to list the given quotes. Please do not use any libraries or plugins to do this other than [jQuery](https://jquery.com/), [Backbone.js](http://backbonejs.org/), and [underscore.js](http://underscorejs.org/).
 
 Please provide the following functionality:
 
