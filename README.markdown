@@ -34,7 +34,7 @@ You will need to implement the following functionality:
  * As a Dealer I can get a hand with two cards in it
  * As a Player I can see what card the dealer is showing
  * As a Player I can bust (lose immediately) when I am getting cards
- * As a Player I can blackjack (win immediately) when I am dealt cards
+ * As a Player I can blackjack (win immediately) when I am dealt cards (this is a simplification)
  * As a Dealer I can draw cards after the player until I win or lose
 
 Please use your discretion in fixing/adding tests. You are free to use/convert to any testing framework you want.
