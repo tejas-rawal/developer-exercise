@@ -1,63 +1,52 @@
-Please fork the repository, complete following exercises, both ruby and javascript.  
-When you are complete, submit a pull request for review.
+Please fork the repository and complete all of the following exercises.
+When you are finished, submit a pull request for review.
 
-If you have any questions feel free to email developers@benchprep.com
+If you have any questions, feel free to email developers@benchprep.com
 
-## Javascript/Coffeescript
-
-### Accordion
-
-In `accordion.html` you will find ACT course sections breakdown.
-
-Please, write code to simulate the [jQuery accordion](http://docs.jquery.com/UI/Accordion) plugin behavior with the supplied sections.
-By default, the current setup comes with [QUnit](https://qunitjs.com/), feel free to drop and use your own testing framework or write all your code as coffescript.
+## JavaScript/CoffeeScript
 
 ### Simple Backbone.js List
 
-In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs.org/) view to list given quotes.  Please do not any libraries or plugins to do this other than [jQuery](https://jquery.com/), [Backbone.js](http://backbonejs.org/) and [underscore.js](http://underscorejs.org/) .
+In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs.org/) view to list the given quotes. Please do not any libraries or plugins to do this other than [jQuery](https://jquery.com/), [Backbone.js](http://backbonejs.org/), and [underscore.js](http://underscorejs.org/).
 
 Please provide the following functionality:
 
- * Fetch quotes from source [quotes.json](https://gist.githubusercontent.com/anonymous/8f61a8733ed7fa41c4ea/raw/1e90fd2741bb6310582e3822f59927eb535f6c73/quotes.json) and display available information in the list-like structure (table/list)
+ * Fetch quotes from the source [quotes.json](https://gist.githubusercontent.com/anonymous/8f61a8733ed7fa41c4ea/raw/1e90fd2741bb6310582e3822f59927eb535f6c73/quotes.json) and display the available information in a list-like structure (table/list)
  * Provide client-side pagination (up to 15 quotes per page)
- * Optionally: Provide way to filter between game and movie quotes
- * Optionally: Provide client-side search filter by the quote text
+ * Optionally: Provide a way to filter between game and movie quotes
+ * Optionally: Provide a client-side search that filters by the quote text
 
-Please, use your discretion in implementing nice-to-have features (if interested).
+Please use your discretion in implementing the optional, nice-to-have features (if interested).
 
 ## Ruby
 
 ### Array extension
 
-Please, write a module that provides `where` behavior to the array of hashes (see test.rb and make it pass, feel free to convert it to your favorite test framework).
-
-### YouTube client
-
-Please write a simple API client that takes a search string and returns 3 search results from the public YouTube API.  Please **do not** use any existing Google API wrapper gems to accomplish this.
+Please write a module that gives `where` behavior to an array of hashes. (See `test.rb` and make it pass, or feel free to convert the tests to your favorite test framework.)
 
 ### Simplified Blackjack
 
-`blackjack.rb` contains initial work on a Blackjack simulation
+`blackjack.rb` contains initial work on a Blackjack simulation.
 
-Please, use your discretion in fixing/adding tests. You are free to use/convert to any testing framework you want.
 You will need to implement the following functionality:
 
  * As a Player I can get a hand with two cards in it
  * As a Dealer I can get a hand with two cards in it
- * As a User I can see what card the dealer is showing
- * As a User I can bust (lose immediately) when I am getting cards
- * As a User I can blackjack (win immediately) when I am getting cards
+ * As a Player I can see what card the dealer is showing
+ * As a Player I can bust (lose immediately) when I am getting cards
+ * As a Player I can blackjack (win immediately) when I am dealt cards (this is a simplification)
  * As a Dealer I can draw cards after the player until I win or lose
+
+Please use your discretion in fixing/adding tests. You are free to use/convert to any testing framework you want.
 
 **Bonus:**
 
- * Simulate a random round of the game (you don't have to write educated user decision logic - it could be guesses)
+ * Simulate a random round of the game (you don't have to write educated player decision logic - it could be just guesses)
 
 **Rules:**
 
- * Bust - all possible hand values are greater than 21 points
- * Blackjack - any possible hand value is exactly 21 point
- * Assume dealer stays on 17 (any hand value)
+ * Bust - Occurs when all possible hand values are greater than 21 points
+ * Blackjack - Occurs when a player or dealer is dealt an ace and a 10-point card
+ * Dealer - Stays on 17 or above
 
- For more rules on blackjack please refer to the [wiki](http://en.wikipedia.org/wiki/Blackjack)
-
+ For more information on blackjack, please refer to the [wiki](http://en.wikipedia.org/wiki/Blackjack).
