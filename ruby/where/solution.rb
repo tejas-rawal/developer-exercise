@@ -5,26 +5,24 @@ module ArrayWhere
   REG_EX = Regexp
 
   def where(query)
-    # Throw ArgumentError if the input query is not a Hash
+    # Throw ArgumentError if the query input is not a Hash
     raise ArgumentError.new('Input should be a hash') unless is_hash?(query)
 
-    results_array = []
-    # Iterate over key-value pairs in query
+    # Immutability for data array being acted upon
+    results = self
+
+    # Iterate over key-value pairs in query and save results to results_array variable at each iteration.
     query.each do |key, value|
-      if results_array.empty?
-        results_array = query_array(self, key, value)
-      else
-        results_array = query_array(results_array, key, value)
-      end
+      results = query_array(results, key, value)
     end
 
-    results_array.compact.flatten.uniq
+    results
   end
 
   private
 
-  def query_array(objects, query_key, query_value)
-    objects.select do |object|
+  def query_array(data, query_key, query_value)
+    data.select do |object|
       if object.key?(query_key)
         value_match?(object[query_key], query_value)
       end
