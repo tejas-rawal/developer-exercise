@@ -1,7 +1,6 @@
 require 'test/unit'
 require '../hand'
 require '../card'
-require 'pry'
 
 class HandTest < Test::Unit::TestCase
   def setup
