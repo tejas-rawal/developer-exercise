@@ -1,3 +1,5 @@
+require_relative 'card'
+
 class Deck
   attr_accessor :playable_cards
   SUITES = [:hearts, :diamonds, :spades, :clubs]
