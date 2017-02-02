@@ -1,5 +1,3 @@
-require 'pry'
-
 module ArrayWhere
   HASH_CLASS = Hash
   REG_EX = Regexp
