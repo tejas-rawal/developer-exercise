@@ -1,24 +1,22 @@
-// Initialize collection
-var collection = new app.QuoteList();
-
-$(document).ready(function() {
-  updateCollection(showQuotes);
-});
-
 function showQuotes(collection, response) {
+  collection.set(response);
+
   var quoteListView = new app.QuoteListView({
-    collection: response
+    collection: collection
   });
 
   quoteListView.render();
 }
 
-function updateCollection(successCallback) {
-  collection.fetch({
-    success: successCallback,
-    error: function(collection, response, options) {
-      alert('Error while retrieving data.');
-      console.log(response.statusText);
-    }
-  });
+function loadError(request, status, error) {
+  alert("Error Loading JSON: " + status + " - " + error);
 }
+
+// Collection initialize options
+var fetchOptions = {
+  success: showQuotes,
+  error: loadError
+};
+
+// Initialize collection with options
+new app.QuoteList(fetchOptions);
